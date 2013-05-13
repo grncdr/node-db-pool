@@ -1,0 +1,37 @@
+{
+  "name": "db-pool",
+  "description": "Easily create a Postgres/MySQL connection pool",
+  "version": "0.1.0",
+  "homepage": "https://github.com/markselby/node-db-pool",
+  "author": {
+    "name": "Mark Selby",
+    "email": "mark@writebox.co.uk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/markselby/node-db-pool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/markselby/node-db-pool/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/markselby/node-db-pool/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/db-pool",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt": "~0.4.1"
+  },
+  "keywords": []
+}
