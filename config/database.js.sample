@@ -1,0 +1,21 @@
+exports.postgres = {
+  defaults: {
+    min: 100,
+    max: 200
+  },
+  development: {
+    database: "development",
+    username: "username",
+    password: "pass"
+  },
+  production: {
+    database: "production",
+    username: "username",
+    password: "pass"
+  },
+  test: {
+    database: "test",
+    username: "username",
+    password: "pass"
+  }
+};
