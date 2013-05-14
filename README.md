@@ -2,7 +2,7 @@
 
 Easily create a Postgres/MySQL connection pool (postgres only until I get MariaDB/MySQL working on my new Ubuntu 13.04 dev machine).
 
-Behind the scenes it returns an any-db pool which can be used as described [https://github.com/grncdr/node-any-db](here).
+Behind the scenes it returns an any-db pool which can be used as described here [here](https://github.com/grncdr/node-any-db).
 
 ## Getting Started
 Install the module with: `npm install db-pool`
