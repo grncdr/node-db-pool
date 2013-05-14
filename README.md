@@ -38,6 +38,9 @@ exports.postgres = {
 ```javascript
 var db_pool = require('db-pool');
 
+// Optionally specify an alternative config file (default is to use /config/database.js)
+db_pool.load('/config/custom-db-config-file.js');
+
 // Create a pools to a development database
 var dev = db_pool.pool('development'); // or db_pool.pool('postgres.development');
 
