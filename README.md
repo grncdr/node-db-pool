@@ -38,9 +38,11 @@ exports.postgres = {
 ```javascript
 var db_pool = require('db-pool');
 
-// Create multiple pools
-db_pool.pool('development'); // or db_pool.pool('postgres.development');
-db_pool.pool('test');
+// Create a pools to a development database
+var dev = db_pool.pool('development'); // or db_pool.pool('postgres.development');
+
+// Create another pool to a different database
+var test = db_pool.pool('test');
 
 // Terminate all active pools
 db_pool.closeAll();
