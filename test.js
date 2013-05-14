@@ -1,8 +1,13 @@
-var pool = require('./lib/db-pool');
+var db_pool = require('./lib/db-pool');
 
-pool.pool('development');
-pool.pool('test');
+var dev = db_pool.pool('postgres.development');
+var test = db_pool.pool('test');
 
-console.log(pool.debug());
+console.log(db_pool.debug());
 
-pool.closeAll();
+dev.query("SELECT 1", function (err, results) {
+  console.log(results);
+
+  // Terminate all active pools
+  db_pool.closeAll();
+});
