@@ -66,7 +66,7 @@ dev.query("SELECT 1", function (err, results) {
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+_v0.1.0_ Postgres supported
 
 ## License
 Copyright (c) 2013 Mark Selby  
