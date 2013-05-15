@@ -10,8 +10,9 @@ Install the module with: `npm install db-pool`
 ## Configuration
 Create a config/database.js containing something like
 ```javascript
-exports.postgres = {
+exports.app1 = {
   defaults: {
+    driver: 'postgres',
     min: 5,
     max: 20
   },
@@ -34,6 +35,11 @@ exports.postgres = {
     min: 15
   }
 };
+
+exports.app1 = {
+  ...
+  ...
+}
 ```
 
 ## Example
@@ -41,10 +47,14 @@ exports.postgres = {
 var db_pool = require('db-pool');
 
 // Optionally specify an alternative config file (default is to use /config/database.js)
-db_pool.load('/config/custom-db-config-file.js');
+db_pool.config('/config/custom-db-config-file.js');
+
+// Create the default pool (from app1) using NODE_ENV=development|test|production
+var test = db_pool.pool();
 
 // Create a pool to a development database
-var dev = db_pool.pool('development'); // or db_pool.pool('postgres.development');
+var dev = db_pool.pool('development');
+var app1_dev = db_pool.pool('app1.development');
 
 // Create another pool to a different database
 var test = db_pool.pool('test');

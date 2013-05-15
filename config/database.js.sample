@@ -1,5 +1,6 @@
-exports.postgres = {
+exports.app1 = {
   defaults: {
+    driver: 'postgres',
     min: 5,
     max: 20
   },
