@@ -1,0 +1,24 @@
+app1:
+
+  defaults:
+    driver: postgres
+    min: 5
+    max: 20
+
+  development:
+    database: development
+    username: username
+    password: pass
+
+  production:
+    database: production
+    username: username
+    password: pass
+    port: 9999
+
+  test:
+    database: test
+    username: username
+    password: pass
+    host: some.hostname
+    min: 15
