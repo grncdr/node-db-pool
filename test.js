@@ -15,3 +15,6 @@ dev.query("SELECT ROUND(RANDOM() * 100) AS number", function (err, results) {
   // Terminate all active pools
   db_pool.closeAll();
 });
+
+var grunt = require('grunt');
+console.log(grunt.file)
