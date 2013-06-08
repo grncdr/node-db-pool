@@ -1,7 +1,7 @@
 {
   "name": "db-pool",
   "description": "Easily create a Postgres/MySQL connection pool",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/markselby/node-db-pool",
   "author": {
     "name": "Mark Selby",
