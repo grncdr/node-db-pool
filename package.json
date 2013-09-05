@@ -28,7 +28,7 @@
     "test": "grunt nodeunit"
   },
   "dependencies": {
-    "any-db": ">0",
+    "any-db": "0.x.x",
     "grunt": "~0.4.1",
     "pg": ">0"
   },
